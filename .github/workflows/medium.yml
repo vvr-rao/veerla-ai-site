@@ -1,0 +1,46 @@
+name: Build Medium feed
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # daily at 06:00 UTC
+  workflow_dispatch:        # manual "Run workflow" button
+  push:
+    branches: [main]
+    paths:
+      - "scripts/build-medium.mjs"
+      - "package.json"
+      - ".github/workflows/medium.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-medium
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm install
+
+      - name: Generate posts.json
+        run: node scripts/build-medium.mjs
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- posts.json; then
+            echo "No changes to posts.json"
+          else
+            git add posts.json
+            git commit -m "chore: refresh Medium feed"
+            git push
+          fi

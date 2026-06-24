@@ -1,0 +1,14 @@
+{
+  "name": "veerla-ai-site",
+  "version": "1.0.0",
+  "description": "Personal website for Venkat Ram Rao — veerla-ramrao.ai",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build:medium": "node scripts/build-medium.mjs",
+    "serve": "python3 -m http.server 8000"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.5.0"
+  }
+}

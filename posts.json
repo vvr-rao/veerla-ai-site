@@ -1,0 +1,140 @@
+{
+  "updated": "2026-06-24T01:38:29.599Z",
+  "profile": "https://medium.com/@venkat.ramrao",
+  "count": 10,
+  "posts": [
+    {
+      "title": "A Recipe for an End-to-End Build and Deploy of a Fully Functioning Agentic App",
+      "link": "https://medium.com/@venkat.ramrao/a-recipe-for-an-end-to-end-build-and-deploy-of-a-fully-functioning-agentic-app-a0da58154536",
+      "pubDate": "2025-05-20T18:53:44.000Z",
+      "image": "https://cdn-images-1.medium.com/max/1536/1*4mGhOb2h51qvcwVk_Ov4kQ.png",
+      "excerpt": "A secure scalable deployment using AWS, Streamlit, LangGraph and OpenAI",
+      "tags": [
+        "aws",
+        "ai",
+        "agentic-ai",
+        "langgraph"
+      ]
+    },
+    {
+      "title": "A Summary of the Common Fine-Tuning Methods for LLMs",
+      "link": "https://medium.com/@venkat.ramrao/a-summary-of-the-common-fine-tuning-methods-for-llms-0a4e07293f2c",
+      "pubDate": "2024-12-29T15:13:41.000Z",
+      "image": "https://cdn-images-1.medium.com/max/1523/1*jG-qUnPDNBvMzOeXTIKUpg.jpeg",
+      "excerpt": "With the plethora of options available for open source LLMs and the various fine-tuning options available, it is worth taking a step back…",
+      "tags": [
+        "model-training",
+        "fine-tuning",
+        "llm",
+        "ai"
+      ]
+    },
+    {
+      "title": "Training a Mini(114M Parameter) Llama 3 like Model from Scratch",
+      "link": "https://medium.com/@venkat.ramrao/training-a-mini-114m-parameter-llama-3-like-model-from-scratch-97525185aa9c",
+      "pubDate": "2024-07-21T10:21:34.000Z",
+      "image": "https://cdn-images-1.medium.com/max/663/1*f9pL4bO1B9oIhjqR9VKLmQ.png",
+      "excerpt": "aka “How to Train you LLM”",
+      "tags": [
+        "deep-learning",
+        "flash-attention",
+        "llm",
+        "pytorch",
+        "llama-3"
+      ]
+    },
+    {
+      "title": "Building a Knowledge Graph for Biomedical texts using GPT-4",
+      "link": "https://medium.com/@venkat.ramrao/building-a-knowledge-graph-for-biomedical-texts-using-gpt-4-4c6deb2c0864",
+      "pubDate": "2024-03-11T00:59:10.000Z",
+      "image": "https://cdn-images-1.medium.com/max/1610/1*lKd4YszsXkxuWFAiT2HVtg.png",
+      "excerpt": "Extracting scientific information from text and organizing it in a meaningful way.",
+      "tags": [
+        "gpt-4",
+        "knowledge-graph",
+        "llm"
+      ]
+    },
+    {
+      "title": "Training an LLM Re-Ranker using Direct Preference Optimization",
+      "link": "https://medium.com/@venkat.ramrao/training-an-llm-re-ranker-using-direct-preference-optimization-981c732e92b0",
+      "pubDate": "2024-02-02T00:14:49.000Z",
+      "image": "https://cdn-images-1.medium.com/max/1384/1*cLAxC5aj9AsRtOgWELtE9Q.jpeg",
+      "excerpt": "Training Mistral 7B to be an LLM Re-ranker using human feedback.",
+      "tags": [
+        "mistral-7b",
+        "fine-tuning",
+        "nlp",
+        "llm",
+        "rlhf"
+      ]
+    },
+    {
+      "title": "Fine Tuning a Sentence Transformer Model",
+      "link": "https://medium.com/@venkat.ramrao/fine-tuning-a-sentence-transformer-for-semantic-search-7c7a57f4db2f",
+      "pubDate": "2023-12-22T23:07:19.000Z",
+      "image": "https://cdn-images-1.medium.com/max/600/1*DeF-5Y-6vYXekb39bXclKQ.png",
+      "excerpt": "A quick introduction to fine tuning Sentence Transformers for Semantic Search.",
+      "tags": [
+        "sentence-transformers",
+        "ai",
+        "semantic-search",
+        "nlp",
+        "embedding-model"
+      ]
+    },
+    {
+      "title": "Fine Tuning Llama 2 using QLoRA and a CoT Dataset",
+      "link": "https://medium.com/@venkat.ramrao/fine-tuning-llama-2-using-qlora-and-a-cot-dataset-515f38b3972d",
+      "pubDate": "2023-07-31T01:16:18.000Z",
+      "image": "https://cdn-images-1.medium.com/max/741/1*0-ZgXilk9EflA38ZkOSl4w.jpeg",
+      "excerpt": "The world of Open Source LLMs is changing fast. The pace at which new Open Source models are being released has been incredible and with…",
+      "tags": [
+        "llama-2",
+        "nlp",
+        "fine-tuning-transformer",
+        "ai",
+        "qlora"
+      ]
+    },
+    {
+      "title": "Expecting Perfect Answers from Imperfect LLMs.",
+      "link": "https://medium.com/@venkat.ramrao/expecting-perfect-answers-from-imperfect-llms-b860cd4d9fb2",
+      "pubDate": "2023-06-04T14:41:37.000Z",
+      "image": "https://cdn-images-1.medium.com/max/1035/1*zmXr8P7uFiqfQlSl4bIUqw.jpeg",
+      "excerpt": "(and how to get better Answers from LLMs using your Prompts)",
+      "tags": [
+        "prompt-engineering",
+        "nlp",
+        "chatgpt"
+      ]
+    },
+    {
+      "title": "Building a Chatbot using a Local Knowledge Base, ChatGPT and Pinecone.",
+      "link": "https://medium.com/@venkat.ramrao/building-a-chatbot-using-a-local-knowledge-base-chatgpt-and-pinecone-d107745a472a",
+      "pubDate": "2023-03-06T14:27:07.000Z",
+      "image": "https://cdn-images-1.medium.com/max/1164/1*ypyx_oRa0OfzA2-BD3Q9TA.jpeg",
+      "excerpt": "Pointing ChatGPT to your own private data source",
+      "tags": [
+        "nlp",
+        "vector-database",
+        "chatgpt",
+        "gpt35"
+      ]
+    },
+    {
+      "title": "Question Answering with GPT-3",
+      "link": "https://medium.com/@venkat.ramrao/question-answering-with-gpt-3-143348abc300",
+      "pubDate": "2023-02-05T22:57:15.000Z",
+      "image": "https://cdn-images-1.medium.com/max/963/1*_W5U0i-tsdE9aUVfCGyl2A.jpeg",
+      "excerpt": "In this article I will walk through an example of a Question Answering system using GPT-3. I have previously experimented with Question…",
+      "tags": [
+        "chatgpt",
+        "openai",
+        "nlp",
+        "question-answering",
+        "gpt-3"
+      ]
+    }
+  ]
+}

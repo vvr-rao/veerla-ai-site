@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Venkat Ram Rao — AI Architect</title>
+  <meta name="description"
+        content="Venkat Ram Rao — Full-stack AI Engineer and Architect focused on Enterprise GenAI, AI-driven process re-engineering, and AI-driven Analytics. End-to-end delivery of AI projects from conception to finished product." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Venkat Ram Rao — AI Architect" />
+  <meta property="og:description"
+        content="Full-stack AI Engineer and Architect — Enterprise GenAI, AI-driven process re-engineering, and AI-driven Analytics. End-to-end AI delivery from conception to finished product." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://veerla-ramrao.ai/" />
+
+  <style>
+    :root {
+      --bg:        #0f172a;  /* slate-900 */
+      --bg-soft:   #131c31;
+      --panel:     #1e293b;  /* slate-800 */
+      --panel-2:   #243349;
+      --border:    #2c3a52;
+      --text:      #e2e8f0;  /* slate-200 */
+      --muted:     #94a3b8;  /* slate-400 */
+      --accent:    #22d3ee;  /* cyan-400 */
+      --accent-2:  #67e8f9;  /* cyan-300 */
+      --accent-dim:#0e7490;
+      --radius:    14px;
+      --maxw:      1040px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(900px 500px at 80% -10%, rgba(34,211,238,0.10), transparent 60%),
+        radial-gradient(700px 400px at 0% 0%, rgba(103,232,249,0.06), transparent 55%),
+        var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+                   Arial, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-2); }
+
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 22px; }
+
+    /* ---------- Header ---------- */
+    header.hero {
+      padding: 90px 0 56px;
+      text-align: center;
+    }
+    header.hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      margin: 0 0 14px;
+      letter-spacing: -0.02em;
+      background: linear-gradient(90deg, #fff 30%, var(--accent-2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .intro {
+      max-width: 640px;
+      margin: 0 auto 28px;
+      color: var(--muted);
+      font-size: 1.12rem;
+    }
+
+    nav.top-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    nav.top-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--panel);
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: border-color .2s, transform .12s, background .2s;
+    }
+    nav.top-links a:hover {
+      border-color: var(--accent);
+      background: var(--panel-2);
+      transform: translateY(-2px);
+    }
+    nav.top-links a.primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent-dim));
+      border-color: transparent;
+      color: #06222b;
+    }
+    nav.top-links a svg { width: 18px; height: 18px; }
+
+    /* ---------- Sections ---------- */
+    section { padding: 48px 0; }
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 26px;
+      flex-wrap: wrap;
+    }
+    .section-head h2 {
+      font-size: 1.7rem;
+      margin: 0;
+      letter-spacing: -0.01em;
+    }
+    .section-head h2::before {
+      content: "";
+      display: inline-block;
+      width: 10px; height: 22px;
+      margin-right: 12px;
+      vertical-align: -3px;
+      border-radius: 3px;
+      background: var(--accent);
+    }
+    .section-head .more { color: var(--muted); font-size: .95rem; }
+
+    /* ---------- Article cards ---------- */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 22px;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      color: var(--text);
+      text-decoration: none;
+      transition: border-color .2s, transform .15s, box-shadow .2s;
+    }
+    .card:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px);
+      box-shadow: 0 14px 30px -16px rgba(34,211,238,0.45);
+    }
+    .card .thumb {
+      aspect-ratio: 16 / 9;
+      width: 100%;
+      object-fit: cover;
+      background: #0b1424;
+      display: block;
+    }
+    .card .body { padding: 16px 18px 20px; display: flex; flex-direction: column; flex: 1; }
+    .card .date { color: var(--muted); font-size: .8rem; margin-bottom: 6px; }
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 1.1rem;
+      line-height: 1.35;
+      color: var(--text);
+      transition: color .2s;
+    }
+    .card h3::after { content: " →"; color: var(--accent); opacity: 0; transition: opacity .2s; }
+    .card:hover h3 { color: var(--accent-2); }
+    .card:hover h3::after { opacity: 1; }
+    .card .excerpt { color: var(--muted); font-size: .92rem; margin: 0 0 14px; flex: 1; }
+    .card .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .card .tag {
+      font-size: .72rem;
+      color: var(--accent-2);
+      border: 1px solid var(--border);
+      padding: 2px 9px;
+      border-radius: 999px;
+    }
+
+    .feed-msg {
+      color: var(--muted);
+      background: var(--panel);
+      border: 1px dashed var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      text-align: center;
+    }
+    .skeleton .card { min-height: 280px; }
+    .skeleton .thumb { background: linear-gradient(100deg,#16223a,#1e2d47,#16223a); }
+
+    /* ---------- Contact ---------- */
+    #contact .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px;
+      text-align: center;
+    }
+    #contact p { color: var(--muted); max-width: 520px; margin: 0 auto 24px; }
+    .contact-actions {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 12px 22px;
+      border-radius: 999px;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      background: var(--panel-2);
+      color: var(--text);
+      transition: transform .12s, border-color .2s, background .2s;
+    }
+    .btn:hover { transform: translateY(-2px); border-color: var(--accent); }
+    .btn svg { width: 18px; height: 18px; }
+    .btn.primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent-dim));
+      border-color: transparent;
+      color: #06222b;
+    }
+    .btn.primary:hover { color: #06222b; }
+
+    /* ---------- Footer ---------- */
+    footer {
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+      padding: 28px 0 56px;
+      text-align: center;
+      color: var(--muted);
+      font-size: .88rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="wrap">
+      <h1>Venkat Ram Rao</h1>
+      <p class="intro">
+        Full-stack AI Engineer and Architect focused on Enterprise GenAI,
+        AI-driven process re-engineering, and AI-driven Analytics. I specialize
+        in owning and delivering end-to-end deployments of AI projects, from
+        conception to a finished product.
+      </p>
+      <nav class="top-links">
+        <a href="#projects">
+          <!-- code -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13 7l-2 10"/></svg>
+          Projects
+        </a>
+        <a href="#articles">
+          <!-- pencil/article -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+          Articles
+        </a>
+        <a href="/ontologies/">
+          <!-- graph/nodes -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M6.8 7.6 10.4 16M17.2 7.6 13.6 16M7 6h10"/></svg>
+          Ontologies
+        </a>
+        <a href="https://github.com/vvr-rao" target="_blank" rel="noopener">
+          <!-- github -->
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.3 3.5.99.1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.23-.12-.31-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.18.77.84 1.24 1.91 1.24 3.23 0 4.63-2.81 5.65-5.49 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+          GitHub
+        </a>
+        <a href="https://vvrrao.home.blog/" target="_blank" rel="noopener">
+          <!-- blog/rss -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1.5" fill="currentColor" stroke="none"/></svg>
+          Old Blog
+        </a>
+        <a class="primary" href="https://calendar.app.google/YhPbbHp3Pbpn1KTP6" target="_blank" rel="noopener">
+          <!-- calendar -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          Book Time With Me
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- ===== Featured Projects ===== -->
+    <section id="projects">
+      <div class="section-head">
+        <h2>Featured Projects</h2>
+        <a class="more" href="https://github.com/vvr-rao?tab=repositories" target="_blank" rel="noopener">
+          All repositories on GitHub →
+        </a>
+      </div>
+      <div class="cards">
+
+        <a class="card" href="https://github.com/vvr-rao/Training-a-Mini-114M-Parameter-Llama-3-like-Model-from-Scratch" target="_blank" rel="noopener">
+          <div class="body">
+            <div class="date">Python · ★ 19</div>
+            <h3>Mini Llama&nbsp;3 — 114M Params from Scratch</h3>
+            <p class="excerpt">Trained a 114-million-parameter Llama-3-style language model from scratch in PyTorch — tokenizer, architecture, and training loop.</p>
+            <div class="tags"><span class="tag">PyTorch</span><span class="tag">LLM</span><span class="tag">Llama&nbsp;3</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="https://github.com/vvr-rao/Fine-tuning-a-Sentence-Transformer-for-RAG" target="_blank" rel="noopener">
+          <div class="body">
+            <div class="date">Jupyter Notebook · ★ 4</div>
+            <h3>Fine-tuning a Sentence Transformer for RAG</h3>
+            <p class="excerpt">Fine-tuned an embedding model for retrieval-augmented generation using the Sentence Transformers library.</p>
+            <div class="tags"><span class="tag">RAG</span><span class="tag">Embeddings</span><span class="tag">Fine-tuning</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="https://github.com/vvr-rao/genie-config-optimizer" target="_blank" rel="noopener">
+          <div class="body">
+            <div class="date">Python · Apache-2.0</div>
+            <h3>Genie Config Optimizer</h3>
+            <p class="excerpt">A CLI tool that programmatically optimizes a Databricks Genie space using an evaluation CSV as input and Claude as the judge.</p>
+            <div class="tags"><span class="tag">Databricks</span><span class="tag">LLM-as-judge</span><span class="tag">CLI</span></div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ===== Articles ===== -->
+    <section id="articles">
+      <div class="section-head">
+        <h2>Writing</h2>
+        <a class="more" href="https://medium.com/@venkat.ramrao" target="_blank" rel="noopener">
+          All articles on Medium →
+        </a>
+      </div>
+      <div id="article-cards" class="cards skeleton" aria-live="polite">
+        <div class="card"><div class="thumb"></div><div class="body"></div></div>
+        <div class="card"><div class="thumb"></div><div class="body"></div></div>
+        <div class="card"><div class="thumb"></div><div class="body"></div></div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact">
+      <div class="section-head"><h2>Contact Me</h2></div>
+      <div class="panel">
+        <p>
+          Interested in GraphRAG, ontology engineering, or enterprise GenAI?
+          Grab a time on my calendar and let's talk.
+        </p>
+        <div class="contact-actions">
+          <a class="btn primary" href="https://calendar.app.google/YhPbbHp3Pbpn1KTP6" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            Book a time with me
+          </a>
+          <a class="btn" href="https://medium.com/@venkat.ramrao" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 5.5h20v13H2zM6.6 9.1l1.9 4.8 1.9-4.8h2.1v5.8h-1.4v-4.4l-1.8 4.4h-1l-1.8-4.4v4.4H5.2V9.1zM15 9.1h1.5v4.4H19v1.4h-4z"/></svg>
+            Medium
+          </a>
+          <a class="btn" href="https://github.com/vvr-rao" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.3 3.5.99.1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.23-.12-.31-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.18.77.84 1.24 1.91 1.24 3.23 0 4.63-2.81 5.65-5.49 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © <span id="year"></span> Venkat Ram Rao ·
+      <a href="https://veerla-ramrao.ai">veerla-ramrao.ai</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const MEDIUM_URL = "https://medium.com/@venkat.ramrao";
+    const container = document.getElementById("article-cards");
+
+    function esc(s) {
+      return (s || "").replace(/[&<>"']/g, c =>
+        ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c]));
+    }
+
+    function fmtDate(iso) {
+      const d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+    }
+
+    function renderCard(p) {
+      const thumb = p.image
+        ? `<img class="thumb" src="${esc(p.image)}" alt="" loading="lazy" onerror="this.remove()" />`
+        : "";
+      const tags = (p.tags || []).slice(0, 3)
+        .map(t => `<span class="tag">${esc(t)}</span>`).join("");
+      return `
+        <a class="card" href="${esc(p.link)}" target="_blank" rel="noopener">
+          ${thumb}
+          <div class="body">
+            ${p.pubDate ? `<div class="date">${esc(fmtDate(p.pubDate))}</div>` : ""}
+            <h3>${esc(p.title)}</h3>
+            ${p.excerpt ? `<p class="excerpt">${esc(p.excerpt)}</p>` : ""}
+            ${tags ? `<div class="tags">${tags}</div>` : ""}
+          </div>
+        </a>`;
+    }
+
+    function showMessage(html) {
+      container.classList.remove("skeleton");
+      container.style.display = "block";
+      container.innerHTML = `<div class="feed-msg">${html}</div>`;
+    }
+
+    fetch("posts.json", { cache: "no-cache" })
+      .then(r => { if (!r.ok) throw new Error("no feed"); return r.json(); })
+      .then(data => {
+        const posts = (data && data.posts) || [];
+        if (!posts.length) throw new Error("empty feed");
+        container.classList.remove("skeleton");
+        container.innerHTML = posts.map(renderCard).join("");
+      })
+      .catch(() => {
+        showMessage(
+          `Latest articles are published on
+           <a href="${MEDIUM_URL}" target="_blank" rel="noopener">Medium</a>.`
+        );
+      });
+  </script>
+</body>
+</html>

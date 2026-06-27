@@ -1,8 +1,20 @@
 {
-  "updated": "2026-06-27T08:21:19.293Z",
+  "updated": "2026-06-27T09:14:48.734Z",
   "profile": "https://medium.com/@venkat.ramrao",
   "count": 10,
   "posts": [
+    {
+      "title": "Governance and Metrics for Production Agentic AI Systems",
+      "link": "https://medium.com/@venkat.ramrao/governance-and-metrics-for-production-agentic-ai-systems-3e0550229a19",
+      "pubDate": "2026-06-27T09:03:54.000Z",
+      "image": "https://cdn-images-1.medium.com/max/1536/1*kMth3xaIQKc_N6GHCe8V5w.png",
+      "excerpt": "Most discussions around Agentic AI focus on models and frameworks. In production, however, success depends less on which model you choose…",
+      "tags": [
+        "agentic-ai-governance",
+        "agentic-ai",
+        "ai-governance"
+      ]
+    },
     {
       "title": "A Recipe for an End-to-End Build and Deploy of a Fully Functioning Agentic App",
       "link": "https://medium.com/@venkat.ramrao/a-recipe-for-an-end-to-end-build-and-deploy-of-a-fully-functioning-agentic-app-a0da58154536",
@@ -120,20 +132,6 @@
         "vector-database",
         "chatgpt",
         "gpt35"
-      ]
-    },
-    {
-      "title": "Question Answering with GPT-3",
-      "link": "https://medium.com/@venkat.ramrao/question-answering-with-gpt-3-143348abc300",
-      "pubDate": "2023-02-05T22:57:15.000Z",
-      "image": "https://cdn-images-1.medium.com/max/963/1*_W5U0i-tsdE9aUVfCGyl2A.jpeg",
-      "excerpt": "In this article I will walk through an example of a Question Answering system using GPT-3. I have previously experimented with Question…",
-      "tags": [
-        "chatgpt",
-        "openai",
-        "nlp",
-        "question-answering",
-        "gpt-3"
       ]
     }
   ]

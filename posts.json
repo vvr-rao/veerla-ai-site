@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17T23:00:09.861Z",
+  "updated": "2026-08-17T23:16:58.314Z",
   "profile": "https://medium.com/@venkat.ramrao",
   "count": 10,
   "posts": [
@@ -8,7 +8,7 @@
       "link": "https://medium.com/@venkat.ramrao/a-tool-to-build-and-deploy-a-fully-functioning-graphrag-application-in-less-than-a-day-91d4f9c5b212",
       "pubDate": "2026-08-17T22:21:26.000Z",
       "image": "https://cdn-images-1.medium.com/max/1024/1*7ajmiObN-E78-DCGscGEMQ.png",
-      "excerpt": "Introduction",
+      "excerpt": "A CLI Tool and Claude Code extension to automate a build and Deploy of an App.",
       "tags": [
         "rags",
         "llm",

@@ -1,8 +1,22 @@
 {
-  "updated": "2026-08-17T06:25:20.028Z",
+  "updated": "2026-08-17T23:00:09.861Z",
   "profile": "https://medium.com/@venkat.ramrao",
   "count": 10,
   "posts": [
+    {
+      "title": "A Tool to Build and Deploy a Fully Functioning GraphRAG Application in Less Than a Day",
+      "link": "https://medium.com/@venkat.ramrao/a-tool-to-build-and-deploy-a-fully-functioning-graphrag-application-in-less-than-a-day-91d4f9c5b212",
+      "pubDate": "2026-08-17T22:21:26.000Z",
+      "image": "https://cdn-images-1.medium.com/max/1024/1*7ajmiObN-E78-DCGscGEMQ.png",
+      "excerpt": "Introduction",
+      "tags": [
+        "rags",
+        "llm",
+        "graphrag",
+        "mcps",
+        "agentic-ai"
+      ]
+    },
     {
       "title": "Governance and Metrics for Production Agentic AI Systems",
       "link": "https://medium.com/@venkat.ramrao/governance-and-metrics-for-production-agentic-ai-systems-3e0550229a19",
@@ -119,19 +133,6 @@
         "prompt-engineering",
         "nlp",
         "chatgpt"
-      ]
-    },
-    {
-      "title": "Building a Chatbot using a Local Knowledge Base, ChatGPT and Pinecone.",
-      "link": "https://medium.com/@venkat.ramrao/building-a-chatbot-using-a-local-knowledge-base-chatgpt-and-pinecone-d107745a472a",
-      "pubDate": "2023-03-06T14:27:07.000Z",
-      "image": "https://cdn-images-1.medium.com/max/1164/1*ypyx_oRa0OfzA2-BD3Q9TA.jpeg",
-      "excerpt": "Pointing ChatGPT to your own private data source",
-      "tags": [
-        "nlp",
-        "vector-database",
-        "chatgpt",
-        "gpt35"
       ]
     }
   ]

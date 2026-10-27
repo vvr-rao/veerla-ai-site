@@ -18,6 +18,7 @@ Static site hosted on **GitHub Pages**. Dark slate + cyan theme, no framework.
 │   └── medium.yml        # daily + manual rebuild of posts.json
 └── ontologies/
     ├── index.html
+    ├── domain_concepts.owl
     ├── geography_ontology.owl
     └── viao_intelligence_artifact_ontology_v2.owl
 ```
@@ -54,9 +55,10 @@ published (extensionless) at the exact namespace paths:
 |------------------------------------------------------|------------------------|
 | `https://veerla-ramrao.ai/ontology/intelligence-artifact` | `ontology/intelligence-artifact` |
 | `https://veerla-ramrao.ai/ontology/geography`             | `ontology/geography`             |
+| `https://veerla-ramrao.ai/ontology/domain-concepts`       | `ontology/domain-concepts`       |
 
 So e.g. `…/ontology/intelligence-artifact#Document` dereferences to the VIAO
-document. These two files are **copies** of the `.owl` files in `ontologies/` —
+document. These files are **copies** of the `.owl` files in `ontologies/` —
 **keep them in sync** when you update an ontology (re-copy the `.owl` over them).
 
 `.nojekyll` is present so GitHub Pages serves these extensionless files verbatim.
